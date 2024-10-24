@@ -777,6 +777,14 @@ cursor: pointer;
     .about .about-content .personal-info{
         flex: 0 0 100%;
         max-width: 100%;
+        font-size: 0.5rem;
+        
     }
 
+}
+@media(max-width:767px){
+    .about .about-content .personal-info .row{
+        display: block;
+        max-width: 100%;
+    }
 }
