@@ -737,10 +737,50 @@ cursor: pointer;
     height: 50px;
     margin: 0 50px;
 }
+.left-switcher
+{
+    transform: translateX(-100px);
+}
+.left-switcher.hide
+{
+    transform: translateX(-100px);
+}
+@media(min-width:1189px) {
+    .aside {
+        left: 0 !important; /* Always visible */
+    }
+
+    .left-switcher {
+        display: none; /* Hide hamburger icon on large screens */
+    }
+}
 @media(max-width:1190px){
+
 .aside{
     left: -270px;
+
+
 }
+.left-switcher {
+    position: fixed;
+    left: 0;
+    top: 60px; /* Align with aside */
+    padding: 15px;
+    width: 100px;
+    border: 1px solid var(--bg-black-50);
+    background-color: var(--bg-black-100);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.left-switcher
+{
+    transform: translateX(0);
+}
+.left-switcher.show {
+    transform: translateX(0); /* Move switcher to indicate action */
+}
+
 .main-content{
     padding-left: 0;
 }
