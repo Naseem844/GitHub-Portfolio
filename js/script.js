@@ -93,3 +93,11 @@
             });
         });
     });
+
+    function hideSideNavbar(){
+        if(window.innerWidth<=1190)
+        {
+            asideBar.style.left = '-270px'; // Hide aside
+            leftSwitcher.classList.add('show'); // Show the hamburger icon again   
+        }
+    }
