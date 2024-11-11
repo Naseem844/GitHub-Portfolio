@@ -77,10 +77,10 @@
 
 .left-switcher{
     position: fixed;
-    left: 0;
+    left: 10px;
     top: 20px;
     padding: 15px;
-    width: 100px;   
+    width: 80px;   
     border: 1px solid var(--bg-black-50);
     background-color: var(--bg-black-100);
     z-index: 101;
@@ -93,7 +93,7 @@
     display: flex;                /* Use flexbox for centering */
     justify-content: center;      /* Center horizontally */
     align-items: center;          /* Center vertically (optional) */
-    height: 50px;  
+    height: 40px;  
     cursor: pointer; /* Change cursor to indicate it's clickable */
 }
 

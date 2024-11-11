@@ -2,7 +2,7 @@
 
     document.addEventListener("DOMContentLoaded",()=>{
         new Typed(".typing",{
-            strings:["Web Developer","React Developer","MERN Developer"],
+            strings:["Web Developer","React Developer","Next Developer"],
             typeSpeed:100,
             BackSpeed:60,
             loop:true
